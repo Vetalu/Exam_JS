@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/css.css">
+    <script src="style/js.js" defer></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div class="header">
+        <h3>My weather </h3>
+        <div><input id="textarea" placeholder="City Name"></input> <button id="find">&#128269</button></div>
+    </div>
+    <div class="content">
+        <div id="button_today">Today</div>
+        <div id="button_5day">5-day forecast</div>
+        </div> 
+         <div id="weather">  
+            <div id="current_weather">
+                <div style="color:lightseagreen; font-weight: bolder;">Current weather in <span id="city_text" style="text-transform: uppercase; color: darkblue;"></span> </div>
+                <div class="cur_img"><img id="cur_img" src="style/img/mg thund.png"></div>
+                <span id="cur_text">Sunny</span>
+            </div>  
+                <div id="cur_temp">29 C</div>
+                    <div class="cur_feel"><p>Real Feel <span id="cur_feel">123</span></p></div>
+                    <div id="cur_info">Sunrise:<span id="cur_sun_up"> 0:00 AM</span> 
+                    <p>Sunset:<span id="cur_sun_set"> 5:11 PM</span> </p>
+                    <p>Duraction: 10:07 hr</p>
+                </div> <div id="cur_data">30.06.2019</div>
+        </div>  
+        <div id="weather_for5">
+             <div id="day0_weath">
+                <br><span style="color:lightseagreen; font-weight: bolder;">TONIGHT</span>
+                <p id="today_5d">jan 5</p>
+                </div>
+                <div class="img_5d_0"><img id="img_for5_0" src="style/img/cloud.png"></div>
+                <div class="text_5d_0"> <span id="text_5d_0" style="font-size: xx-large;"> 40  </span>
+                <br> <span id="text_weather_5d_0" style="font-size: larger; color: dimgray;"> Clear </span>  </div>
+             
+            <div id="day1_weath">
+                <br><span style="color:lightseagreen; font-weight: bolder;">TOMOROW</span>
+                <p id="tomor_5d_1">Jan 10</p>
+                </div>
+                <div class="img_5d_1"><img id="img_for5_1" src="style/img/sun.png" ></div>
+                <div class="text_5d_1">
+                    <span id="text_5d_1" style="font-size: xx-large;"> 35 </span>
+                    <br> <span id="text_weather_5d_1" style="font-size: larger; color: dimgray;"> Clear</span>
+                </div>
+
+            <div id="day2_weath">
+                <br><span style="color:lightseagreen; font-weight: bolder;">NOW</span>
+                <p id="tomor_5d_2">jan 5</p>
+                </div>
+                <div class="img_5d_2"><img id="img_for5_2" src="style/img/cloud.png"></div>
+                <div class="text_5d_2">
+                    <span id="text_5d_2" style="font-size: xx-large;"> 25 </span>
+                    <br> <span id="text_weather_5d_2" style="font-size: larger; color: dimgray;"> Clear</span>
+                </div>
+
+            <div id="day3_weath">
+                <br><span style="color:lightseagreen; font-weight: bolder;">NOW</span>
+                <p id="tomor_5d_3">jan 5</p>
+                </div>
+                <div class="img_5d_3"><img id="img_for5_3" src="style/img/cloud.png"></div>
+                <div class="text_5d_3">
+                    <span id="text_5d_3" style="font-size: xx-large;"> 20 </span>
+                    <br> <span id="text_weather_5d_3" style="font-size: larger; color: dimgray;"> Clear</span>
+                </div>
+           <div id="day4_weath">
+            <br> <span style="color: lightseagreen; font-weight: bolder;">NOW</span>
+            <p id="tomor_5d_4"> jan 6 </p>
+        </div>
+        <div class="img_5d_4"><img id="img_for5_4" src="style/img/cloud.png" ></div>
+        <div class="text_5d_4">
+            <span id="text_5d_4" style="font-size: xx-large;">15</span>
+            <br> <span id="text_weather_5d_4" style="font-size: larger; color: dimgray;"> Cleeear</span>
+        </div>
+        </div>
+        
+         <div id="hour_weather">
+            
+            <div><span style="color:lightseagreen; font-weight: bolder;">HOURLY</span>
+                <p><h2>TODAY</h2></p></div>
+                <div class="today_text1">Forecast</div>
+                <div class="today_text2">Temp (*C)</div>
+                <div class="today_text3">RealFeel</div>
+                <div class="today_text4">Wind (km/h)</div>
+            
+                <div><h2 id="hour_1">pm</h2>
+            <img id="table_img_1" src="style/img/sun.png">
+            </div>
+
+            <div><h2 id="hour_2">pm</h2>
+            <img  id="table_img_2" src="style/img/sun.png">
+            </div>
+
+            <div><h2 id="hour_3">pm</h2>
+            <img  id="table_img_3" src="style/img/sun.png">
+            </div>
+
+            <div><h2 id="hour_4">pm</h2>
+            <img  id="table_img_4" src="style/img/sun.png">
+            </div>
+
+            <div><h2 id="hour_5">pm</h2>
+            <img  id="table_img_5" src="style/img/sun.png">
+                </div>
+
+            <div><h2 id="hour_6">pm</h2>
+            <img id="table_img_6" src="style/img/sun.png">
+                </div>
+        </div>
+            <div id="div_for_zone">
+                <span id="text_for_zone">NEARBY PLACES</span>
+                <div class="zone1">
+                    <span id="city_zone1" style="margin-left: 7%;">City</span>
+                    <span><img id="img_zone1" src="style/img/sun.png" width="50px" height="50px" > <span id="text_zone1" style="margin-left: 7%;">25C</span></span>                
+                </div>
+
+                <div class="zone2">
+                    <span id="city_zone2" style="margin-left: 7%;">City</span>
+                    <span><img id="img_zone2" src="style/img/sun.png" width="50px" height="50px" > <span id="text_zone2" style="margin-left: 7%;">25C</span></span>                
+                </div>
+
+                <div class="zone3">
+                    <span id="city_zone3" style="margin-left: 7%;">City</span>
+                    <span><img id="img_zone3" src="style/img/sun.png" width="50px" height="50px" > <span id="text_zone3" style="margin-left: 7%;">25C</span></span>                
+                </div>
+
+                <div class="zone4">
+                    <span id="city_zone4" style="margin-left: 7%;">City</span>
+                    <span><img id="img_zone4" src="style/img/sun.png" width="50px" height="50px" > <span id="text_zone4" style="margin-left: 7%;">25C</span> </span>
+                </div>
+            </div>
+        <div id="error">
+            <div><img id="error_img" src="style/img/hand-drawn-404-error_23-2147736515.png" width="480px" height="480px">
+            <span id="error_text">
+                <span id="textarea_error"></span> could not be found.
+                    <br>Please enter a different location
+              </span>
+        </div>
+
+        
+
+        </div>
+
+</body>
+</html> 
